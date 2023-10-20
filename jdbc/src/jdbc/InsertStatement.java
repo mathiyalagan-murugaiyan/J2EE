@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class JDBC_Program {
+public class InsertStatement {
 
 	public static void main(String[] args) throws SQLException {
 
@@ -18,7 +18,9 @@ public class JDBC_Program {
 
 		Statement st = conn.createStatement();
 
-		String query = "insert into student values(1,'mathi','mathi@gmail.com',9876543210)";
+		String query = "insert into student values(3,'sudhan','sudhan@gmail.com',9876543210)";
+		
+		
 		
 		int result = st.executeUpdate(query);
 		
