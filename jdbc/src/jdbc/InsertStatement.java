@@ -18,7 +18,7 @@ public class InsertStatement {
 
 		Statement st = conn.createStatement();
 
-		String query = "insert into student values(3,'sudhan','sudhan@gmail.com',9876543210)";
+		String query = "insert into student values(2,'sudhan','sudhan@gmail.com',9876543210),(3,'dinesh','dinesh@gmail.com',9876543211)";
 		
 		
 		

@@ -18,7 +18,7 @@ public class UpdateStatement {
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata","root","root");
 		
 		Statement st = conn.createStatement();
-		String query =" update student set email='mathi@gmail.com' where id=1";
+		String query =" update student set mobile='9876543212' where id=3";
 		int res =  st.executeUpdate(query);
 		System.out.println(res);
 		conn.close();
