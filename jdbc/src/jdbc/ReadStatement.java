@@ -20,7 +20,7 @@ public class ReadStatement {
 
 			Statement st = conn.createStatement();
 
-			String query = "select * from student";
+			String query = "select * from student where name like 'm%'";
 
 			ResultSet rs = st.executeQuery(query);
 

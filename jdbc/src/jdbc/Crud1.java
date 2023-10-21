@@ -19,7 +19,7 @@ public class Crud1 {
 
 		Statement st = conn.createStatement();
 
-		String query = "select email , id , mobile from student";
+		String query = "select email , id , mobile from student ";
 
 		ResultSet rs = st.executeQuery(query);
 
