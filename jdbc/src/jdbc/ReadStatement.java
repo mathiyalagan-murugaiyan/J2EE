@@ -33,9 +33,7 @@ public class ReadStatement {
 				Long mobile = rs.getLong(4);
 				
 				System.out.println(id + " | " + name + " | " + email + " | " + mobile);
-	
 			}
-			
 			conn.close();
 			
 			
@@ -47,6 +45,7 @@ public class ReadStatement {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println("please check");
 		}
 		
 		
