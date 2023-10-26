@@ -8,11 +8,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+import connection.ConnectionClass;
+
 public class ReadStatement {
 
 	public static void main(String[] args) throws SQLException {
 		
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata", "root", "root");
+//		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata", "root", "root");
+//		
+		Connection con = ConnectionClass.getconnection();
 		
 		Scanner in = new Scanner(System.in);
 		
