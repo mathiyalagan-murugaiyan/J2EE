@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc_statement;
 
 import java.sql.Connection;
 import java.sql.Driver;

@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc_statement;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class InsertStatement {
+public class UpdateStatement {
 
 	public static void main(String[] args) throws SQLException {
 
@@ -17,13 +17,13 @@ public class InsertStatement {
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata", "root", "root");
 
 		Statement st = conn.createStatement();
-
-		String query = "insert into student values(2,'sudhan','sudhan@gmail.com',9876543210),(3,'dinesh','dinesh@gmail.com',9876543211)";
-
-		int result = st.executeUpdate(query);
-
-		System.out.println(result);
-
+		
+		String query = " update student set mobile='9876543212' where id=3";
+		
+		int res = st.executeUpdate(query);
+		
+		System.out.println(res);
+		
 		conn.close();
 
 	}
