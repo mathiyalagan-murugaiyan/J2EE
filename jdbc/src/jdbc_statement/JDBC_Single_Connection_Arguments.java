@@ -11,11 +11,15 @@ public class JDBC_Single_Connection_Arguments {
 		
 		Connection con = DriverManager.getConnection("jdbc:mysql:///studentdata?user=root&password=root");
 		
+		con.setAutoCommit(false);
+		
 		Statement st = con.createStatement();
 		
 		String query = "delete from student where id =4";
 		
 		int result = st.executeUpdate(query);
+		
+		con.setAutoCommit(true);
 		
 		System.out.println(result);
 		
