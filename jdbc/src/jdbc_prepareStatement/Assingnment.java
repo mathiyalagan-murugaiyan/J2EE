@@ -19,6 +19,9 @@ public class Assingnment {
 		boolean condition = true;
 
 		int rows = 0;
+		
+		System.out.println("how many rows you want inserted");
+		int limit=in.nextInt();
 
 		while (true) {
 
@@ -45,7 +48,7 @@ public class Assingnment {
 			rows++;
 			System.out.println(result);
 
-			if (rows == 2) {
+			if (rows == limit) {
 				condition = false;
 				break;
 			}
