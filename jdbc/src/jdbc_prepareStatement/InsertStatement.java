@@ -1,13 +1,16 @@
 package jdbc_prepareStatement;
 
 import java.util.*;
+
+import connection.ConnectionClass;
+
 import java.sql.*;
 
 public class InsertStatement {
 
 	public static void main(String[] args) throws SQLException {
 
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata", "root", "root");
+		Connection con  = ConnectionClass.getconnection();
 
 		try (Scanner in = new Scanner(System.in)) {
 			System.out.println("Enter the id");
