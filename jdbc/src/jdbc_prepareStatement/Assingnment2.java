@@ -21,11 +21,11 @@ public class Assingnment2 {
 		
 		Statement st = con.createStatement();
 		
-		String query = "delete from student where id= 8";
+		String query = "delete from student where id= 9";
 		
 		 int result = st.executeUpdate(query);
 		 
-		 System.out.println( "one row dleted" + result);
+		 System.out.println(result + " row dleted " );
 		 
 		 con.close();
 		
