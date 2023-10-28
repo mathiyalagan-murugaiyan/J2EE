@@ -18,7 +18,7 @@ public class UpdateStatement {
 
 		Statement st = conn.createStatement();
 		
-		String query = " update student set mobile='9876543212' where id=3";
+		String query = " update student set name='raja' where id=14";
 		
 		int res = st.executeUpdate(query);
 		
