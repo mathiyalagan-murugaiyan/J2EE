@@ -23,7 +23,7 @@ public class Assingnment {
 		System.out.println("how many rows you want inserted");
 		int limit=in.nextInt();
 
-		while (true) {
+		while (condition == true) {
 
 			System.out.println("Enter The id");
 			int id = in.nextInt();
@@ -44,14 +44,17 @@ public class Assingnment {
 			pst.setString(3, email);
 			pst.setLong(4, mobile);
 
-			int result = pst.executeUpdate();
+		    pst.executeUpdate();
 			rows++;
-			System.out.println(result);
+			System.out.println(rows);
 
 			if (rows == limit) {
 				condition = false;
 				break;
 			}
+			con.close();
+			
+			in.close();
 			con.close();
 		}
 
