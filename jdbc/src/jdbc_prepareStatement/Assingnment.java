@@ -52,8 +52,7 @@ public class Assingnment {
 				condition = false;
 				break;
 			}
-			con.close();
-			
+
 			in.close();
 			con.close();
 		}
