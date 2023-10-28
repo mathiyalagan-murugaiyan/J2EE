@@ -19,9 +19,9 @@ public class Assingnment {
 		boolean condition = true;
 
 		int rows = 0;
-		
+
 		System.out.println("how many rows you want inserted");
-		int limit=in.nextInt();
+		int limit = in.nextInt();
 
 		while (condition == true) {
 
@@ -44,19 +44,17 @@ public class Assingnment {
 			pst.setString(3, email);
 			pst.setLong(4, mobile);
 
-		    pst.executeUpdate();
+			pst.executeUpdate();
 			rows++;
-			System.out.println(rows);
 
 			if (rows == limit) {
 				condition = false;
 				break;
 			}
-
-			in.close();
-			con.close();
 		}
-
+		System.out.println(rows + " rows affected");
+		in.close();
+		con.close();
 	}
 
 }
