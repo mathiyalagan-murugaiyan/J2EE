@@ -28,12 +28,5 @@ public class Assingnment2 {
 		 System.out.println(result + " row dleted " );
 		 
 		 con.close();
-		
-		
-		
-		
-		
-
 	}
-
 }
