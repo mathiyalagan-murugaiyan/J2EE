@@ -16,10 +16,10 @@ public class CreateTable {
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentdata", "root", "root");
 
 			
-			String createTableSQL = "create table employee (" + "id int, " + "name varchar(40), "
+			String createTable = "create table employee (" + "id int, " + "name varchar(40), "
 					+ "gender varchar(6), " + "email varchar(25), " + "salary decimal(10, 2))";
 
-			pst = con.prepareStatement(createTableSQL);
+			pst = con.prepareStatement(createTable);
 
 			pst.execute();
 
