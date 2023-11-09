@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class AddImage {
+public class AddImage{
 
 	public static void main(String[] args) throws SQLException, FileNotFoundException {
 		

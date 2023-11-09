@@ -14,7 +14,7 @@ public class StatementBatch {
 		
 		Statement st = con.createStatement();
 		
-		st.addBatch("delete from student where id>10");
+		st.addBatch("delete from student where id=19");
 		
 		
 		st.addBatch("update student set mobile=1234567891 where id = 15");

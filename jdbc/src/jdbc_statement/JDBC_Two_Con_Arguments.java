@@ -37,13 +37,14 @@ public class JDBC_Two_Con_Arguments {
 		
 		String query= "insert into student values (?,?,?,?)";
 		
+		
 		PreparedStatement pst = con.prepareStatement(query);
 		pst.setInt(1, id);
 		pst.setString(2, name);
 		pst.setString(3, email);
 		pst.setLong(4, mobile);
 		
-		int res = pst.executeUpdate();
+	   int res = pst.executeUpdate();
 		
 		System.out.println("one row affected" + res);
 		
