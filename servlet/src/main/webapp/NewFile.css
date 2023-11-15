@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+form{
+	background-color: aquamarine;
+}
+.form{
+	display: grid;
+	justify-content: center;
+	
+	
+	width: 250px;
+	height: 250px;
+}
+

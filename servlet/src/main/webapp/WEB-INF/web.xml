@@ -18,4 +18,40 @@
 	<servlet-name>s1</servlet-name>
 	
 	</servlet-mapping>
+	
+	<servlet>
+	<servlet-class>servlet.ServletTwo</servlet-class>
+	<servlet-name>s2</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/result</url-pattern>
+	<servlet-name>s2</servlet-name>
+	
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-class>servlet.ServletThree</servlet-class>
+	<servlet-name>s3</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/d1</url-pattern>
+	<servlet-name>s3</servlet-name>
+	
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-class> servlet.ServletFour</servlet-class>
+	<servlet-name>s4</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/d2</url-pattern>
+	<servlet-name>s4</servlet-name>
+	</servlet-mapping>
+	
+	
+	
+	
 </web-app>
