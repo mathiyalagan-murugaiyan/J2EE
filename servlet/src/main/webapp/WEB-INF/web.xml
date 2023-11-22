@@ -51,7 +51,55 @@
 	<servlet-name>s4</servlet-name>
 	</servlet-mapping>
 	
+	<servlet>
+	<servlet-class>servlet.GenericServletOne</servlet-class>
+	<servlet-name>s5</servlet-name>
 	
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/s5</url-pattern>
+	<servlet-name>s5</servlet-name>
+	</servlet-mapping>
+	
+	<servlet> 
+	<servlet-class>servlet.GenericServletTwo</servlet-class>
+	<servlet-name>s6</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/s6</url-pattern>
+	<servlet-name>s6</servlet-name>
+	</servlet-mapping>
+	
+	
+	<context-param>
+	<param-name>DB-Name</param-name>
+	<param-value> data</param-value>
+	</context-param>
+	
+	<servlet>
+	<servlet-class> servlet.ServletContext1</servlet-class>
+	<servlet-name>c1</servlet-name>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	<url-pattern>/url1</url-pattern>
+	<servlet-name>c1</servlet-name>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-class> servlet.ServletContext2</servlet-class>
+	<servlet-name>c2</servlet-name>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	<url-pattern>/url2</url-pattern>
+	<servlet-name>c2</servlet-name>
+	</servlet-mapping>
 	
 	
 </web-app>
