@@ -102,4 +102,40 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+	<servlet-class> servlet.Db1</servlet-class>
+	<servlet-name>d1</servlet-name>
+	<init-param>
+	<param-name>database </param-name>
+	<param-value> sys</param-value>
+	</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/db</url-pattern>
+	<servlet-name>d1</servlet-name>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-class> servlet.Db2 </servlet-class>
+	<servlet-name>d2</servlet-name>
+	<init-param>
+	<param-name>emp</param-name>
+	<param-value>hari</param-value>
+	</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<url-pattern>/emp</url-pattern>
+	<servlet-name>d2</servlet-name>
+	
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
 </web-app>
