@@ -1,14 +1,13 @@
 package servlet;
 import java.io.IOException;
 
-import javax.jws.WebService;
 import javax.servlet.GenericServlet;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-@WebService()
+
 public class GenericServletOne extends GenericServlet {
 	
 	@Override
