@@ -14,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import dao.ProductDao;
 
 
+@SuppressWarnings("serial")
 @WebServlet("/delete")
 public class Delete extends HttpServlet {
 

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.ProductDao;
-import dto.ProductDto;
+@SuppressWarnings("serial")
 @WebServlet("/edit")
 
 public class Edit  extends HttpServlet{

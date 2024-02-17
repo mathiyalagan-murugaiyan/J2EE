@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.SellerDao;
 import dto.SellerDto;
+@SuppressWarnings("serial")
 @WebServlet("/signup")
 public class Seller extends HttpServlet{
 

@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
@@ -15,6 +14,7 @@ import javax.servlet.http.Part;
 
 import dao.ProductDao;
 import dto.ProductDto;
+@SuppressWarnings("serial")
 @WebServlet("/addproduct")
 @MultipartConfig(maxFileSize=1024*1024*100)
 
