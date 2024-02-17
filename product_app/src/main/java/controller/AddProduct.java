@@ -53,16 +53,7 @@ public class AddProduct extends HttpServlet{
 	try {
 		int res=Pdao.ProductInsert(p);
 		
-	/*	if(res==1)
-		{
-			PrintWriter pw=resp.getWriter();
-			pw.println("data Saved");
-		}
-		else
-		{
-			PrintWriter pw=resp.getWriter();
-			pw.println("data failed");
-		}*/
+	
 		if(res==1)
 		{
 			//req.setAttribute("message","data is successfully added");
