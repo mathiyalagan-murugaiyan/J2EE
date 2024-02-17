@@ -9,6 +9,9 @@
     <!-- Add your CSS styles here -->
     <style>
         body {
+            background-image: url("ecommerce1.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
             margin: 0;
@@ -20,11 +23,12 @@
         }
 
         form {
-            background-color: #fff;
+            background-color:navy;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-bottom: 260px;
         }
 
         input[type="button"] {
